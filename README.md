@@ -23,6 +23,11 @@ We know that emails are strings that have 3 pieces of information in the followi
 4. the '.' symbol **then**
 5. a uniform resource locator (i.e. com, edu, or org)
 
+### Part 1 of solution
+1, 3, 5 have to be any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'. Let's assume no special character can be selected (i.e., ?, /, or  \ ). This is not bad to create.
+
+We will inclose out search to be within '[]' so that we can match other components of the email
+
 ```
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 ```
