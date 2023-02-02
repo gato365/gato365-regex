@@ -70,3 +70,13 @@ The 'gi' at the end of the regular expression indicates that it should be used i
 
 ## Conclusion
 This post provides a solution to creating a regular expression to match emails. It explains the use of letters, numbers, periods, underscores, and dashes in the username, '@' symbol, company name, '.' symbol, and uniform resource locator. It also explains the use of the escape key for the period, and the '@' symbol not needing it. The final code includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
+
+
+## About Author
+
+Immanuel Williams is a data scientist, developer, and educator who has dedicated his career to helping others learn and grow in the world of technology. He is currently an adjunct professor at Cal Poly, where he teaches a variety of programming and data science courses. He is also the founder of GATO365 Learning Center, an organization committed to the dissemination of education, knowledge, and resources related to data science and development. Immanuel has a passion for teaching, and he seeks to make data science and software development accessible to everyone. He is a strong advocate for diversity and inclusion in the technology industry, and he consistently works to ensure that everyone has the opportunity to succeed. Immanuel believes that everyone should have the opportunity to learn, grow, and achieve success in the tech industry. He is committed to providing the best education and resources to help his students reach their goals.
+
+Contact Information:
+
+- [https://github.com/gato365](Immanuel Williams GitHub)
+- [https://www.linkedin.com/in/immanuelwilliams/](LinkedIn)
