@@ -1,5 +1,17 @@
 # Regex Tutorial Starter Code
 
+## Table of Contents
+
+## 1. Introductory Paragraph
+2. You say you want emails, huh????
+   1. Topic A
+   2. Topic B
+   3. Topic C
+3. Conclusion
+
+## Introductory Paragraph
+This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the user name, the '@' symbol, the company name, the '.' symbol, and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of escape key for the period, and that the '@' symbol does not need it. The third part provides the final code, which includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
+
 ## You say you want emails, huh????
 
 You want get emails from a potential clients website. You need to address of the following questions:
@@ -14,7 +26,7 @@ This post will primarily for focus on question 2., however, when using regex (re
 
 
 
-## Process for getting emails
+### Part 1: The breakdown of Proces
 We know that emails are strings that have 3 pieces of information in the following order
 
 1. username  **then**
@@ -23,7 +35,7 @@ We know that emails are strings that have 3 pieces of information in the followi
 4. the '.' symbol **then**
 5. a uniform resource locator (i.e. com, edu, or org)
 
-### Part 1 of solution
+### Part 2: Text of solution
 1, 3, 5 have to be any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'. Let's assume no special character can be selected (i.e., ?, /, or  \ ). This is not bad to create.
 
 We will inclose out search to be within '[]' so that we can match other components of the email. This can be statisfied with the following code:
@@ -38,11 +50,11 @@ We will inclose out search to be within '[]' so that we can match other componen
 - .,_,-: denotes a period, underscore, and dash
 
 
-## Part 2 of the soluion
+### Part 3: Connectors
 
 Regarding 4. from the list within the process contains a special character '.' (it is special because it serves a purpose in regex), we remove its effect by using '\.' to eliminate its particular purpose ('\' is called an escape key). On the other hand, come to find out '@' is not  special character we do not have to use the escape key.
 
-## Part 3 of the solution
+### Part 4: Putting everything together
 
 We add all pieces information of 1. - 5. to be following code. The '+' symbol is used to concatenate the searches.
 
@@ -54,3 +66,7 @@ The "gi" at the end of the regular expression indicates that it should be used i
 ```
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 ```
+
+
+## Conclusion
+This post provides a solution to creating a regular expression to match emails. It explains the use of letters, numbers, periods, underscores, and dashes in the username, '@' symbol, company name, '.' symbol, and uniform resource locator. It also explains the use of the escape key for the period, and the '@' symbol not needing it. The final code includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
