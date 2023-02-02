@@ -44,7 +44,9 @@ Regarding 4. from the list within the process contains a special character '.' (
 
 ## Part 3 of the solution
 
-We add all
+We add all pieces information of 1. - 5. to be following code. The '+' symbol is used to concatenate the searches.
+
+Lastly, the forward slash '/' is used to indicate the start of a regular expression. The parentheses '(' indicate that the expression that follows should be captured as a group. ')' denotes the end of the group.
 
 
 
