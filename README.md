@@ -2,8 +2,8 @@
 
 ## Table of Contents
 
-[1. Introductory Paragraph](## Introductory Paragraph)
-[2. You say you want emails, huh????](## You say you want emails, huh????)
+[1. Introductory Paragraph](#Introductory Paragraph)
+[2. You say you want emails, huh????](##You say you want emails, huh????)
    1. The Breakdown of Process
    2. Text of solution
    3. Connectors
