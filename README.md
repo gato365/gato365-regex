@@ -1,9 +1,14 @@
 # Regex Tutorial Starter Code
 
+
+How to do TOC!
+https://github.com/hillaryfraley/jobbriefings/edit/master/README.md
+
+
 ## Table of Contents
 
-1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#Introductory Paragraph)
-2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex##You say you want emails, huh????)
+1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#IntroductoryParagraph)
+2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex##Yousayyouwantemails,huh????)
    1. [The Breakdown of Process](https://github.com/gato365/gato365-regex)
    2. [Text of solution](https://github.com/gato365/gato365-regex)
    3. [Connectors](https://github.com/gato365/gato365-regex)
