@@ -4,9 +4,10 @@
 
 ## 1. Introductory Paragraph
 2. You say you want emails, huh????
-   1. Topic A
-   2. Topic B
-   3. Topic C
+   1. The Breakdown of Process
+   2. Text of solution
+   3. Connectors
+   4. Putting everything together
 3. Conclusion
 
 ## Introductory Paragraph
@@ -26,7 +27,7 @@ This post will primarily for focus on question 2., however, when using regex (re
 
 
 
-### Part 1: The breakdown of Proces
+### Part 1: The Breakdown of Process
 We know that emails are strings that have 3 pieces of information in the following order
 
 1. username  **then**
@@ -60,13 +61,12 @@ We add all pieces information of 1. - 5. to be following code. The '+' symbol is
 
 Lastly, the forward slash '/' is used to indicate the start of a regular expression. The parentheses '(' indicate that the expression that follows should be captured as a group. ')' denotes the end of the group.
 
-The "gi" at the end of the regular expression indicates that it should be used in a global and case-insensitive manner. This means that the expression will match all occurrences of the pattern, regardless of case.
+The 'gi' at the end of the regular expression indicates that it should be used in a global and case-insensitive manner. This means that the expression will match all occurrences of the pattern, regardless of case.
 
 
 ```
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 ```
-
 
 ## Conclusion
 This post provides a solution to creating a regular expression to match emails. It explains the use of letters, numbers, periods, underscores, and dashes in the username, '@' symbol, company name, '.' symbol, and uniform resource locator. It also explains the use of the escape key for the period, and the '@' symbol not needing it. The final code includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
