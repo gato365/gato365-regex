@@ -26,7 +26,28 @@ We know that emails are strings that have 3 pieces of information in the followi
 ### Part 1 of solution
 1, 3, 5 have to be any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'. Let's assume no special character can be selected (i.e., ?, /, or  \ ). This is not bad to create.
 
-We will inclose out search to be within '[]' so that we can match other components of the email
+We will inclose out search to be within '[]' so that we can match other components of the email. This can be statisfied with the following code:
+
+```
+[a-zA-Z0-9._-]
+```
+
+- a-z: denotes any lower case letter
+- A-Z: denotes any upper case letter
+- 0-9: denotes any number between 0-9
+- .,_,-: denotes a period, underscore, and dash
+
+
+## Part 2 of the soluion
+
+Regarding 4. from the list within the process contains a special character '.' (it is special because it serves a purpose in regex), we remove its effect by using '\.' to eliminate its particular purpose ('\' is called an escape key). On the other hand, come to find out '@' is not  special character we do not have to use the escape key.
+
+## Part 3 of the solution
+
+We add all
+
+
+
 
 ```
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
