@@ -2,13 +2,14 @@
 
 ## Table of Contents
 
-## 1. Introductory Paragraph
-2. You say you want emails, huh????
+[1. Introductory Paragraph](## Introductory Paragraph)
+[2. You say you want emails, huh????](## You say you want emails, huh????)
    1. The Breakdown of Process
    2. Text of solution
    3. Connectors
    4. Putting everything together
-3. Conclusion
+[3. Conclusion](## Conclusion)
+[4. About Author](## About Author)
 
 ## Introductory Paragraph
 This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the user name, the '@' symbol, the company name, the '.' symbol, and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of escape key for the period, and that the '@' symbol does not need it. The third part provides the final code, which includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
