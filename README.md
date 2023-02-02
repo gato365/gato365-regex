@@ -48,7 +48,7 @@ We add all pieces information of 1. - 5. to be following code. The '+' symbol is
 
 Lastly, the forward slash '/' is used to indicate the start of a regular expression. The parentheses '(' indicate that the expression that follows should be captured as a group. ')' denotes the end of the group.
 
-
+The "gi" at the end of the regular expression indicates that it should be used in a global and case-insensitive manner. This means that the expression will match all occurrences of the pattern, regardless of case.
 
 
 ```
