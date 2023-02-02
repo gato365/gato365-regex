@@ -78,5 +78,5 @@ Immanuel Williams is a data scientist, developer, and educator who has dedicated
 
 Contact Information:
 
-- (https://github.com/gato365)[Immanuel Williams GitHub]
-- (https://www.linkedin.com/in/immanuelwilliams/)[LinkedIn]
+- [Immanuel Williams's GitHub](https://github.com/gato365)
+- [Immanuel Williams's LinkedIn](https://www.linkedin.com/in/immanuelwilliams/)
