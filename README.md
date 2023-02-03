@@ -7,19 +7,26 @@ https://github.com/hillaryfraley/jobbriefings/edit/master/README.md
 
 ## Table of Contents
 
-1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#IntroductoryParagraph)
-2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex##Yousayyouwantemails,huh????)
-   1. [The Breakdown of Process](https://github.com/gato365/gato365-regex)
+1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#Introductory-Paragraph)
+2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex##You-say-you-want-emails-huh)
+   1. [The Breakdown of Process](https://github.com/gato365/gato365-regex##Part-1:-The-Breakdown-of-Process)
    2. [Text of solution](https://github.com/gato365/gato365-regex)
    3. [Connectors](https://github.com/gato365/gato365-regex)
    4. [Putting everything together](https://github.com/gato365/gato365-regex)
-3. [Conclusion](https://github.com/gato365/gato365-regex## Conclusion)
-4. [About Author](https://github.com/gato365/gato365-regex## About Author)
+3. [Conclusion](https://github.com/gato365/gato365-regex##Conclusion)
+4. [About Author](https://github.com/gato365/gato365-regex##About-Author)
+
+
+-----------
 
 ## Introductory Paragraph
 This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the user name, the '@' symbol, the company name, the '.' symbol, and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of escape key for the period, and that the '@' symbol does not need it. The third part provides the final code, which includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
 
-## You say you want emails, huh????
+
+
+-----------
+
+## You say you want emails huh
 
 You want get emails from a potential clients website. You need to address of the following questions:
 
@@ -32,8 +39,10 @@ This post will primarily for focus on question 2., however, when using regex (re
 
 
 
+-----------
 
 ### Part 1: The Breakdown of Process
+
 We know that emails are strings that have 3 pieces of information in the following order
 
 1. username  **then**
@@ -41,6 +50,9 @@ We know that emails are strings that have 3 pieces of information in the followi
 3. name of the company **then**
 4. the '.' symbol **then**
 5. a uniform resource locator (i.e. com, edu, or org)
+
+
+-----------
 
 ### Part 2: Text of solution
 1, 3, 5 have to be any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'. Let's assume no special character can be selected (i.e., ?, /, or  \ ). This is not bad to create.
@@ -56,10 +68,13 @@ We will inclose out search to be within '[]' so that we can match other componen
 - 0-9: denotes any number between 0-9
 - .,_,-: denotes a period, underscore, and dash
 
+-----------
 
 ### Part 3: Connectors
 
 Regarding 4. from the list within the process contains a special character '.' (it is special because it serves a purpose in regex), we remove its effect by using '\.' to eliminate its particular purpose ('\' is called an escape key). On the other hand, come to find out '@' is not  special character we do not have to use the escape key.
+
+-----------
 
 ### Part 4: Putting everything together
 
@@ -74,15 +89,18 @@ The 'gi' at the end of the regular expression indicates that it should be used i
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 ```
 
+-----------
+
 ## Conclusion
 This post provides a solution to creating a regular expression to match emails. It explains the use of letters, numbers, periods, underscores, and dashes in the username, '@' symbol, company name, '.' symbol, and uniform resource locator. It also explains the use of the escape key for the period, and the '@' symbol not needing it. The final code includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
 
+-----------
 
 ## About Author
 
 Immanuel Williams is a data scientist, developer, and educator who has dedicated his career to helping others learn and grow in the world of technology. He is currently an adjunct professor at Cal Poly, where he teaches a variety of programming and data science courses. He is also the founder of GATO365 Learning Center, an organization committed to the dissemination of education, knowledge, and resources related to data science and development. Immanuel has a passion for teaching, and he seeks to make data science and software development accessible to everyone. He is a strong advocate for diversity and inclusion in the technology industry, and he consistently works to ensure that everyone has the opportunity to succeed. Immanuel believes that everyone should have the opportunity to learn, grow, and achieve success in the tech industry. He is committed to providing the best education and resources to help his students reach their goals.
 
-Contact Information:
+## Contact Information:
 
 - [Immanuel Williams's GitHub](https://github.com/gato365)
 - [Immanuel Williams's LinkedIn](https://www.linkedin.com/in/immanuelwilliams/)
