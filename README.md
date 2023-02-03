@@ -8,13 +8,13 @@ https://github.com/hillaryfraley/jobbriefings/edit/master/README.md
 ## Table of Contents
 
 1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#Introductory-Paragraph)
-2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex##You-say-you-want-emails-huh)
-   1. [The Breakdown of Process](https://github.com/gato365/gato365-regex##Part-1:-The-Breakdown-of-Process)
+2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex#You-say-you-want-emails-huh)
+   1. [The Breakdown of Process](https://github.com/gato365/gato365-regex#Part-1:-The-Breakdown-of-Process)
    2. [Text of solution](https://github.com/gato365/gato365-regex)
    3. [Connectors](https://github.com/gato365/gato365-regex)
    4. [Putting everything together](https://github.com/gato365/gato365-regex)
-3. [Conclusion](https://github.com/gato365/gato365-regex##Conclusion)
-4. [About Author](https://github.com/gato365/gato365-regex##About-Author)
+3. [Conclusion](https://github.com/gato365/gato365-regex#Conclusion)
+4. [About Author](https://github.com/gato365/gato365-regex#About-Author)
 
 
 -----------
@@ -27,7 +27,6 @@ This post provides a solution to creating a regular expression to match emails, 
 -----------
 
 ## You say you want emails huh
-
 You want get emails from a potential clients website. You need to address of the following questions:
 
 1. What is the format of website?
@@ -97,7 +96,6 @@ This post provides a solution to creating a regular expression to match emails. 
 -----------
 
 ## About Author
-
 Immanuel Williams is a data scientist, developer, and educator who has dedicated his career to helping others learn and grow in the world of technology. He is currently an adjunct professor at Cal Poly, where he teaches a variety of programming and data science courses. He is also the founder of GATO365 Learning Center, an organization committed to the dissemination of education, knowledge, and resources related to data science and development. Immanuel has a passion for teaching, and he seeks to make data science and software development accessible to everyone. He is a strong advocate for diversity and inclusion in the technology industry, and he consistently works to ensure that everyone has the opportunity to succeed. Immanuel believes that everyone should have the opportunity to learn, grow, and achieve success in the tech industry. He is committed to providing the best education and resources to help his students reach their goals.
 
 ## Contact Information:
