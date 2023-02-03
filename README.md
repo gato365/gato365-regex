@@ -10,9 +10,9 @@ https://github.com/hillaryfraley/jobbriefings/edit/master/README.md
 1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#Introductory-Paragraph)
 2. [You say you want emails, huh????](https://github.com/gato365/gato365-regex#You-say-you-want-emails-huh)
    1. [The Breakdown of Process](https://github.com/gato365/gato365-regex#Part-1:-The-Breakdown-of-Process)
-   2. [Text of solution](https://github.com/gato365/gato365-regex)
-   3. [Connectors](https://github.com/gato365/gato365-regex)
-   4. [Putting everything together](https://github.com/gato365/gato365-regex)
+   2. [Text of solution](https://github.com/gato365/gato365-regex#Part-2:-Text-of-solution)
+   3. [Connectors](https://github.com/gato365/gato365-regex#Part-3:-Connectors)
+   4. [Putting everything together](https://github.com/gato365/gato365-regex#Part-4:-Putting-everything-together)
 3. [Conclusion](https://github.com/gato365/gato365-regex#Conclusion)
 4. [About Author](https://github.com/gato365/gato365-regex#About-Author)
 
