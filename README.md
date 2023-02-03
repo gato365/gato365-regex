@@ -1,8 +1,7 @@
 # Regex Tutorial Starter Code
 
 
-How to do TOC!
-https://github.com/hillaryfraley/jobbriefings/edit/master/README.md
+
 
 
 ## Table of Contents
