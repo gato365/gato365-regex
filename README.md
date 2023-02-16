@@ -20,24 +20,24 @@
 -----------
 ## Introductory Paragraph
 
-Are you interested getting your hands dirty with regular expressions? Do you want to learn how to match emails? If so, this post is for you. This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the user name, the '@' symbol, the company name, the '.' symbol, and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of escape key for the period, and that the '@' symbol does not need it. The third part provides the final code, which includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
+Are you interested in getting your hands dirty with regular expressions? Do you want to learn how to match emails? If so, this post is for you. This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the username, the '@' symbol, the company name, the '.' symbol, and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of the escape key for the period and that the '@' symbol does not need it. The third part provides the final code, which includes using the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
 
 ## Summary
-This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the user name, the '@' symbol, the company name, the '.' symbol, and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of escape key for the period, and that the '@' symbol does not need it. The third part provides the final code, which includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
+This post provides a solution to creating a regular expression to match emails, which consists of three parts. The first part explains that the user name, the '@' symbol, the company name, the '.' symbol and a uniform resource locator can all contain letters, numbers, periods, underscores, and dashes. The second part explains the use of the escape key for the period and that the '@' symbol does not need it. The third part provides the final code, which includes using the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
 
 
 
 -----------
 
 ## You say you want emails huh
-You want get emails from a potential clients website. You need to address of the following questions:
+You want to get emails from a potential client’s website. It would be best if you addressed of the following questions:
 
-1. What is the format of website?
-2. What is general format of a email?
-3. How many peoples' email are you trying to extract?
-4. What other types of information are you looking for? (i.e. name, position, phone number)
+1. What is the format of the website?
+2. What is the general format of an email?
+3. How many people’s emails are you trying to extract?
+4. What other types of information are you looking for? (i.e., name, position, phone number)
 
-This post will primarily for focus on question 2., however, when using regex (regular expression) you might as well know these other parameters so that you are not redoing work.
+This post will primarily focus on question 2., however, when using regex (regular expression), you might as well know these other parameters so that you are not redoing work.
 
 
 
@@ -53,22 +53,23 @@ We know that emails are strings that have 3 pieces of information in the followi
 4. the '.' symbol **then**
 5. a uniform resource locator (i.e. com, edu, or org)
 
-The following is a breakdown of code that will be used to match emails:
+The following **sections** is a breakdown of code that will be used to match emails:
 
-#### Section 1: Letters, numbers, periods, underscores, and dashes
+#### Section A: Letters, numbers, periods, underscores, and dashes
+
 a-zA-Z0-9._- : denotes any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'
 
-#### Section 2: The '@' symbol
+#### Section B: The '@' symbol
 @ : denotes the '@' symbol
 
-#### Section 3: Company name
-[a-zA-Z0-9._-]+ : denotes any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-' and the '+' symbol is used to concatenate the searches.
+#### Section C: Company name
+Same as Section A
 
-#### Section 4: The '.' symbol
+#### Section D: The '.' symbol
 
 \. : denotes the '.' symbol
 
-#### Section 5: Connectors
+#### Section E: Connectors
 
 + : denotes the '+' symbol is used to concatenate the searches.
 
@@ -120,14 +121,16 @@ The 'gi' at the end of the regular expression indicates that it should be used i
 -----------
 
 ## Conclusion
-This post provides a solution to creating a regular expression to match emails. It explains the use of letters, numbers, periods, underscores, and dashes in the username, '@' symbol, company name, '.' symbol, and uniform resource locator. It also explains the use of the escape key for the period, and the '@' symbol not needing it. The final code includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
+This post provides a solution to creating a regular expression to match emails. It explains the use of letters, numbers, periods, underscores, and dashes in the username, '@' symbol, company name, '.' symbol, and uniform resource locator. It also explains the use of the escape key for the period and the '@' symbol not needing it. The final code includes the use of the forward slash, parentheses, plus sign, and "gi" at the end of the expression.
 
 -----------
 
 ## About Author
-Immanuel Williams is a data scientist, developer, and educator who has dedicated his career to helping others learn and grow in the world of technology. He is currently an adjunct professor at Cal Poly, where he teaches a variety of programming and data science courses. He is also the founder of GATO365 Learning Center, an organization committed to the dissemination of education, knowledge, and resources related to data science and development. Immanuel has a passion for teaching, and he seeks to make data science and software development accessible to everyone. He is a strong advocate for diversity and inclusion in the technology industry, and he consistently works to ensure that everyone has the opportunity to succeed. Immanuel believes that everyone should have the opportunity to learn, grow, and achieve success in the tech industry. He is committed to providing the best education and resources to help his students reach their goals.
+Immanuel Williams is a data scientist, developer, and educator who has dedicated his career to helping others learn and grow in the world of technology. He is currently an adjunct professor at Cal Poly, teaching various programming and data science courses. He is also the founder of GATO365 Learning Center, an organization committed to disseminating education, knowledge, and resources related to data science and development. Immanuel has a passion for teaching, and he seeks to make data science and software development accessible to everyone. He is a strong advocate for diversity and inclusion in the technology industry, and he consistently works to ensure everyone has the opportunity to succeed. Immanuel believes that everyone should have the opportunity to learn, grow, and achieve success in the tech industry. He is committed to providing the best education and resources to help his students reach their goals.
 
 ## Contact Information:
 
 - [Immanuel Williams's GitHub](https://github.com/gato365)
 - [Immanuel Williams's LinkedIn](https://www.linkedin.com/in/immanuelwilliams/)
+
+## [GitHub Gist Version](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c)

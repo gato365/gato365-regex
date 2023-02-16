@@ -16,11 +16,11 @@ Choosing the regex tutorial on matching an email address is a great choice.
 
 [X] I like how you provided detailed information, examples, and code snippets in your sections. 
 
-[o] Per the required criteria, you should give each different component of the regex its own individual section. 
+[X] Per the required criteria, you should give each different component of the regex its own individual section. 
 
 [X] Thank you for including an “Author” section with information about yourself. 
 
-[o] I was unable to check the functionality of the GitHub repo link due to this tutorial not rendering as markdown.
+[X] I was unable to check the functionality of the GitHub repo link due to this tutorial not rendering as markdown.
 
 [o] I would suggest reading through carefully and fixing the grammar and spelling errors in some areas to allow your content to be understood as clearly as possible. 
  
