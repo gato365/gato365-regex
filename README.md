@@ -53,6 +53,26 @@ We know that emails are strings that have 3 pieces of information in the followi
 4. the '.' symbol **then**
 5. a uniform resource locator (i.e. com, edu, or org)
 
+The following is a breakdown of code that will be used to match emails:
+
+#### Section 1: Letters, numbers, periods, underscores, and dashes
+a-zA-Z0-9._- : denotes any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'
+
+#### Section 2: The '@' symbol
+@ : denotes the '@' symbol
+
+#### Section 3: Company name
+[a-zA-Z0-9._-]+ : denotes any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-' and the '+' symbol is used to concatenate the searches.
+
+#### Section 4: The '.' symbol
+
+\. : denotes the '.' symbol
+
+#### Section 5: Connectors
+
++ : denotes the '+' symbol is used to concatenate the searches.
+
+In the following parts, we will go into more detail about each section.
 
 -----------
 
@@ -90,6 +110,12 @@ The 'gi' at the end of the regular expression indicates that it should be used i
 ```
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 ```
+
+
+
+
+
+
 
 -----------
 
