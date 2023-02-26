@@ -112,10 +112,114 @@ The 'gi' at the end of the regular expression indicates that it should be used i
 /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
 ```
 
+Imagine you have the url of a website and you want to extract all the emails from that website. The following is an example of a string that contains emails:
+
+
+```python
+str = """Name: John Doe
+Email: john.doe@example.com 
+Address: 123 Main Street, Anytown, USA
+
+Name: Jane Smith
+Email: jane.smith@example.com 
+Address: 456 2nd Avenue, Anytown, USA
+
+Name: Jim Johnson
+Email: jim.johnson@example.com 
+Address: 789 3rd Road, Anytown, USA """
+
+```
+
+You can use regex to extract all the emails from the string. 
+
+## Regex
+
+You may say what is regex? Regex is a sequence of characters that define a search pattern. Regular expressions can be used to check if a string contains the specified search pattern. It is also used to manipulate strings and extract information from them. Regular expressions are widely used in UNIX world.
+
+The following will be used to extract emails from a string:
+
+```python
+emails = re.findall(r'^([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)$', str)
+```
+
+where the r in front of the string is used to denote a raw string. It is used to ignore all the escape characters present in a string. The ^ and $ are used to match the beginning and end of a string. 
+
+## Anchors
+
+Anchors means the beginning and end of a string using anchor characters, ^ and $ respectively. It is used to match a pattern only at the beginning or end of a string. It is also used to match a pattern only at the beginning or end of a word.
+
+### Example 1
+
+ For example, the following regex would match a string of exactly 4 characters: 
+ 
+ 
+```python
+fours = re.findall(r'^.{4}$', str)
+```
+ where the dot (.) is a wildcard character that matches any character and curly braces ({}) in the regex are used to specify the number of characters that should be matched. 
 
 
 
 
+
+## Quantifiers
+
+Quantifiers means the number of occurrences of a character that must be present in the input string for a match to be found. It is used to match a pattern between a minimum and maximum number of times. It is also used to match a pattern between a minimum number of times. It is also used to match a pattern between a maximum number of times. It is also used to match a pattern exactly n number of times. It is also used to match a pattern zero or more times. It is also used to match a pattern one or more times. It is also used to match a pattern zero or one time.
+
+Though we do not use quantifiers in the example above, it is important to know that quantifiers are used to match a pattern between a minimum and maximum number of times. Below is a list of quantifiers:
+ 
+The following is a list of Quantifiers in regex:
+
+•	? (match 0 or 1 occurrence)
+•	* (match 0 or more occurrences)
+•	+ (match 1 or more occurrences)
+•	{n} (match n occurrences)
+•	{n,} (match n or more occurrences)
+•	{n,m} (match between n and m occurrences)
+
+
+### Example 2
+
+For example, regex that will get all the '@' symbols from the string. The following is the output:
+```python
+ats = re.findall(r'/@+/g', str)
+```
+
+where  forward slash (/) in regex is used to indicate the start and end of a regular expression. The g flag in regex is used to perform a global match (find all matches rather than stopping after the first match).
+
+*Please note:* The difference between ^ and $ and / / is that ^ and $ are anchor characters that are used to match the start and end of a string respectively, while / / is used to indicate the start and end of a regular expression.
+
+## OR Operator
+
+OR Operator means the logical OR operator. It is used to match a pattern with any of the alternatives specified. It is also used to match a pattern with any of the alternatives specified.
+
+The OR Operator (|) in regex is used to match one of the specified patterns. 
+
+### Example 3
+For example, we want to match a string that contains Road or Avenue. The following is the output:
+
+```python
+road_or_avenue = re.findall(r'Road|Avenue', str)
+```
+
+
+## Flags
+Flags are used to modify the search behavior. It is used to perform a case-insensitive match. It is also used to perform a global match (find all matches rather than stopping after the first match). It is also used to perform a multiline match. It is also used to perform a sticky match. It is also used to perform a Unicode match.
+
+### Example 4
+For example, we 
+
+## Grouping and Capturing
+Grouping and Capturing are used to match a pattern and remember the match. 
+
+
+
+## Bracket Expressions
+Bracket Expressions are used to match a single character out of several possible characters. It is also used to match a single character not present in the list of characters. It is also used to match a single character in a range. It is also used to match a single character not in a range. It is also used to match a single character of a certain type. It is also used to match a single character not of a certain type. It is also used to match any single character. It is also
+
+
+## Greedy and Lazy Match
+Greedy and Lazy Match are used to match as many characters as possible. It is also used to match as few characters as possible.
 
 
 -----------
