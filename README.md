@@ -308,7 +308,16 @@ lazy = re.findall(r'/ab*?c/g', str)
 ```
 
 
+ ## Look-ahead and Look-behind
+Look-ahead and Look-behind are used to match a pattern only if followed by or preceded by a specific pattern. It is also used to match a pattern only if not followed by or preceded by a specific pattern.
 
+### Example 8
+
+For example, the following regex will match 'abc' only if it is followed by 'def':
+
+```python
+/abc(?=def)/
+```
 
 
 
