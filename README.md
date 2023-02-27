@@ -6,23 +6,36 @@
 
 ## Table of Contents
 
-1. [Introductory Paragraph](https://github.com/gato365/gato365-regex#Introductory-Paragraph)
-2. [Summary](https://github.com/gato365/gato365-regex#Summary)
-3. [You say you want emails, huh????](https://github.com/gato365/gato365-regex#You-say-you-want-emails-huh)
-   1. [The Breakdown of Process](https://github.com/gato365/gato365-regex#Part-1:-The-Breakdown-of-Process)
-   2. [Text of solution](https://github.com/gato365/gato365-regex#Part-2:-Text-of-solution)
-   3. [Connectors](https://github.com/gato365/gato365-regex#Part-3:-Connectors)
-   4. [Putting everything together](https://github.com/gato365/gato365-regex#Part-4:-Putting-everything-together)
-4. [A thorough explanation of the code])()
-   1. [Regex]()
-   2. [Anchors]()
-   3. [Quantifiers]()
-   4. [OR Operator]()
-   5. [Flags]()
-   6. [Grouping and Capturing]()
-   7. [Bracket Expressions]()
-5. [Conclusion](https://github.com/gato365/gato365-regex#Conclusion)
-6. [About Author](https://github.com/gato365/gato365-regex#About-Author)
+1. [Introductory Paragraph](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Introductory-Paragraph)
+2. [Summary](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Summary)
+3. [You say you want emails, huh????](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#You-say-you-want-emails-huh)
+   1. [The Breakdown of Process](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#The-Breakdown-of-Process)
+   
+      A. [Letters, numbers, periods, underscores, and dashes](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#The-Breakdown-of-Process)
+      
+      B. [The '@' symbol](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#PThe-Breakdown-of-Process)
+      
+      C. [Company name](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#The-Breakdown-of-Process)
+      
+      D. [The '.' symbol](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#The-Breakdown-of-Process)
+   
+      E. [Connectors](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#The-Breakdown-of-Process)
+   2. [Text of solution](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Text-of-solution)
+   3. [Connectors](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Connectors)
+   4. [Putting everything together](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Putting-everything-together)
+   
+4. [An Explanation])(https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#An-Explanation)
+
+   1. [Regex](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Regex)
+   2. [Anchors](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Anchors)
+   3. [Quantifiers](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Quantifiers)
+   4. [OR Operator](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#OR-Operator)
+   5. [Flags](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Flags)
+   6. [Grouping and Capturing](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Grouping-and-Capturing])
+   7. [Bracket Expressions](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Bracket-Expressions)   
+   
+5. [Conclusion](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#Conclusion)
+6. [About Author](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c#About-Author)
 
 
 -----------
@@ -49,9 +62,10 @@ This post will primarily focus on question 2., however, when using regex (regula
 
 
 
+
 -----------
 
-### Part 1: The Breakdown of Process
+### The Breakdown of Process
 
 We know that emails are strings that have 3 pieces of information in the following order
 
@@ -85,7 +99,7 @@ In the following parts, we will go into more detail about each section.
 
 -----------
 
-### Part 2: Text of solution
+### Text of solution
 1, 3, 5 have to be any letter (upper and/or lower) and/or number as well as periods '.', underscore '_' or dash '-'. Let's assume no special character can be selected (i.e., ?, /, or  \ ). This is not bad to create.
 
 We will inclose out search to be within '[]' so that we can match other components of the email. This can be statisfied with the following code:
@@ -101,13 +115,13 @@ We will inclose out search to be within '[]' so that we can match other componen
 
 -----------
 
-### Part 3: Connectors
+### Connectors
 
 Regarding 4. from the list within the process contains a special character '.' (it is special because it serves a purpose in regex), we remove its effect by using '\.' to eliminate its particular purpose ('\' is called an escape key). On the other hand, come to find out '@' is not  special character we do not have to use the escape key.
 
 -----------
 
-### Part 4: Putting everything together
+### Putting everything together
 
 We add all pieces information of 1. - 5. to be following code. The '+' symbol is used to concatenate the searches.
 
@@ -115,9 +129,15 @@ Lastly, the forward slash '/' is used to indicate the start of a regular express
 
 The 'gi' at the end of the regular expression indicates that it should be used in a global and case-insensitive manner. This means that the expression will match all occurrences of the pattern, regardless of case.
 
------------
 
-# A thorough explanation of the code
+```
+/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi)
+```
+
+
+
+
+# An Explanation
 
 
 Imagine you have the url of a website and you want to extract all the emails from that website. The following is an example of a string that contains emails:
@@ -288,6 +308,10 @@ lazy = re.findall(r'/ab*?c/g', str)
 ```
 
 
+
+
+
+
 -----------
 
 ## Conclusion
@@ -298,12 +322,12 @@ This post provides a solution to creating a regular expression to match emails. 
 ## About Author
 Immanuel Williams is a data scientist, developer, and educator who has dedicated his career to helping others learn and grow in the world of technology. He is currently an adjunct professor at Cal Poly, teaching various programming and data science courses. He is also the founder of GATO365 Learning Center, an organization committed to disseminating education, knowledge, and resources related to data science and development. Immanuel has a passion for teaching, and he seeks to make data science and software development accessible to everyone. He is a strong advocate for diversity and inclusion in the technology industry, and he consistently works to ensure everyone has the opportunity to succeed. Immanuel believes that everyone should have the opportunity to learn, grow, and achieve success in the tech industry. He is committed to providing the best education and resources to help his students reach their goals.
 
-
------------
-
 ## Contact Information:
 
 - [Immanuel Williams's GitHub](https://github.com/gato365)
 - [Immanuel Williams's LinkedIn](https://www.linkedin.com/in/immanuelwilliams/)
+
+
+
 
 ## [GitHub Gist Version](https://gist.github.com/gato365/5dd0f0241676b06b6f27f2ba52db7a4c)
